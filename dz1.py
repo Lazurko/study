@@ -56,7 +56,7 @@ def df2(a,s):
         return int(s[-4:])-int(a[-4:])
     elif int(s[3:5]) == int(a[3:5]):
         if int(s[:2]) == int(a[:2]):
-            return 'С Днем Рождения!!!!'
+            return 'С Днем Рождения!!!! тебе ' + str(int(s[-4:])-int(a[-4:]))
         elif int(s[:2]) > int(a[:2]):
             return int(s[-4:])-int(a[-4:])
         else:
