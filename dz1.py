@@ -65,9 +65,17 @@ def df2(a,s):
     else:
         return int(s[-4:])-int(a[-4:])-1
 
-print (prt_str('Примерно'))
-print (bl(22))
-print (df1(44,445))
-print (st1('Всякие слова: 12345'))
-print (st2(32))
-print (df2('02.06.1987','02.06.2019'))
+# Вариант 2 без if
+
+def df3(a,s):
+    age = int(((int(s[-4:])-int(a[-4:]))*12 - (int(a[3:5]) - int(s[3:5])) - ((int(a[:2]) - int(s[:2]))/30))/12)
+    return age
+
+
+#print (prt_str('Примерно'))
+#print (bl(22))
+#print (df1(44,445))
+#print (st1('Всякие слова: 12345'))
+#print (st2(32))
+#print (df2('02.06.1987','02.06.2019'))
+print (df3('02.06.1987','30.05.2019'))
