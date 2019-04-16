@@ -30,9 +30,16 @@ def df3(x,y):
 
 def df4():
     a=[]
-    for i in range(100001,999999):
-        i1=str(i)
-        if int(i1[0]) + int(i1[1]) + int(i1[2]) == int(i1[3]) + int(i1[4]) + int(i1[5]):
+    for i in range(1001,999999):
+        i2=str(i)
+        if len(i2) == 4:
+            i2 = '00' + i2
+        elif len(i2) == 5:
+            i2 = '0' + i2
+        else:
+            pass
+
+        if int(i2[0]) + int(i2[1]) + int(i2[2]) == int(i2[3]) + int(i2[4]) + int(i2[5]):
             a.append(i)
     return a
 
@@ -70,6 +77,6 @@ def df6(st):
 #print (df1([1,2,3,4,1]))
 #print (df2([1,2,3,4,5]))
 #print (df3('fgwqasd','asdfgqw'))
-#print (df4())
+print (df4())
 #print (df5('dkfjjhkjbggkljhlkjhddddlhjlkjgvvkjbljbeeekjhss'))
-print (df6(stt))
+#print (df6(stt))
