@@ -77,6 +77,6 @@ def df6(st):
 #print (df1([1,2,3,4,1]))
 #print (df2([1,2,3,4,5]))
 #print (df3('fgwqasd','asdfgqw'))
-print (df4())
-#print (df5('dkfjjhkjbggkljhlkjhddddlhjlkjgvvkjbljbeeekjhss'))
+#print (df4())
+print (df5('dkfjjhkjbggkljhlkjhddddlhjlkjgvvkjbljbeeekjhss'))
 #print (df6(stt))
