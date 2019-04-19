@@ -6,7 +6,8 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 login = os.environ['login']  # логин в Edit Configurations/Environment variables
 password = os.environ['password']  # Пароль в Edit Configurations/Environment variables
-options = {'server': 'https://j.smsfinance.ru', 'verify': False}  #
+srv = os.environ['srv']  # Сервер в Edit Configurations/Environment variables
+options = {'server': srv, 'verify': False}  #
 jira = JIRA(options, basic_auth=(login, password))
 
 
